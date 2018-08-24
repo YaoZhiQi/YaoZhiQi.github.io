@@ -1,0 +1,19 @@
+---
+layout:     post
+title:      "第一篇博客"
+subtitle:   "搭建完成进行测试"
+date:       2018-08-24 16:32
+author:     "YaoZhiQi"
+header-img: "img/post-bg-os-metro.jpg"
+catalog: true
+tags:
+    - 测试
+---
+
+
+> 搭建好的博客测试文章
+
+#### 第一篇博客
+
+测试文章内容
+
