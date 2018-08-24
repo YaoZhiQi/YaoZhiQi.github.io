@@ -2,10 +2,10 @@
 title: YaoZhiQi Blog
 SEOTitle: 姚志奇的博客 | YaoZhiQi
 header-img: img/about-bg.jpg
-email: huxpro@gmail.com
-description: "关于前端与设计、黑客与画家 | 黄玄，Web & Mobile Lover，Software Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。"
+email: 627314658@qq.com
+description: "关于java语言的一些认知和对一些新鲜事物的尝试，与你一起发现更大的世界。"
 keyword: "姚志奇, yzq姚志奇, yaozhiqi, @YaoZhiQi, 姚志奇的博客, YaoZhiQi Blog, 博客, 个人网站, 互联网, Web, JavaScript, Java, 设计模式"
-url: "https://huangxuan.me"              # your host, for absolute URL
+#url: "https://huangxuan.me"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
@@ -66,7 +66,7 @@ netease_comment: false
 
 # Google Analytics
 ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+#ga_domain: huangxuan.me
 
 
 
