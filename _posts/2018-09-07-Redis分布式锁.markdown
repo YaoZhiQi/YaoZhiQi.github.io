@@ -1,0 +1,36 @@
+---
+layout:     post
+title:      "Redis分布式锁"
+subtitle:   "分布式锁，能够保证在高并发情况下一段代码只能被一个线程执行"
+date:       2018-09-07
+author:     "YaoZhiQi"
+header-img: "img/post-bg-os-metro.jpg"
+catalog: true
+tags:
+    - redis
+    - 分布式锁
+---
+
+#### 为什么要使用分布式锁
+
+我有一个定时任务，布置在了多台服务器上，在同一时间我只希望有一个服务器执行，这时候就需要一个锁来保证
+
+#### Redis 分布式锁
+
+分布式锁实现可以通过redis实现也可以通过zk实现，这里我们只介绍redis实现分布式锁的代码
+
+#### 加锁代码
+
+```
+public Boolean setLock(String key,String value,int expireTime){ //增加数据
+    Jedis jedis = jedisPool.getResource();
+    String result = jedis.set(key, value, SET_IF_NOT_EXIST, SET_WITH_EXPIRE_TIME, expireTime);
+    jedis.close();
+    if (LOCK_SUCCESS.equals(result)) {
+        return true;
+    }
+    return false;
+}
+```
+
+
